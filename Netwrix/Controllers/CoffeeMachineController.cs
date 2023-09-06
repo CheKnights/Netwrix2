@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BenKnights.Netwrix;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Netwrix.Controllers
 {
@@ -18,7 +19,8 @@ namespace Netwrix.Controllers
             public int NumEspressoShots { get; set; }
             public bool AddMilk { get; set; }
         }
-        public class CoffeeMachineStub : CoffeeMachine.ICoffeeMachine
+        public class CoffeeMachineStub :  CoffeeMachine.ICoffeeMachine
+            // CoffeeMachine.ICoffeeMachine
         {
             //void CoffeeMachine(bool _isOn, bool _IsMakingCoffee, CoffeeMachine.State _WaterLevelState, CoffeeMachine.State _BeenFeedState, CoffeeMachine.State _WasteCoffeeState, CoffeeMachine.State _WaterTrayState)
             //{

@@ -1,6 +1,8 @@
 ﻿// using static BenKnights.Netwrix.Controllers.CoffeeMachineController;
 // using static BenKnights.Netwrix.CoffeeMachine;
 
+using Netwrix.Controllers;
+
 namespace BenKnights.Netwrix
 {
     public class CoffeeMachine
@@ -15,7 +17,7 @@ namespace BenKnights.Netwrix
             public CoffeeMachine.State WaterTrayState { get; }
             public Task TurnOnAsync();
             public Task TurnOffAsync();
-            public Task MakeCoffeeAsync(CoffeeCreationOptions options);
+            public Task MakeCoffeeAsync(CoffeeMachineController.CoffeeCreationOptions options);
         }
 
         public CoffeeMachine(bool _isOn, bool _isMakingCoffee, State _waterLevelState, State _beanFeedState, State _wasteCoffeeState, State _waterTryState) 
